@@ -1,8 +1,8 @@
 {
-  "name": "sails-baas",
-  "version": "1.0.0",
-  "description": "Apigee BaaS adapter for Sails / Waterline",
-  "main": "index.js",
+  "name": "waterline-baas",
+  "version": "0.10.0",
+  "description": "BaaS adapter for Sails / Waterline",
+  "main": "adapter.js",
   "scripts": {
     "test": "node test/integration/runner -R spec -b"
   },
@@ -11,31 +11,28 @@
     "url": "https://github.com/kidiyoor/sails-baas.git"
   },
   "keywords": [
-    "apigee",
     "baas",
     "adapter",
     "sails",
     "waterline",
-    "orm",
-    "sailsjs",
-    "sails.js"
+    "sails.js",
+    "plugin"
   ],
-  "author": "Gautham V Kidiyoor <gkidiyoor@apigee.com>",
+  "author": "Gautham V Kidiyoor",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {},
   "devDependencies": {
-    "waterline-adapter-tests": "git://github.com/balderdashy/waterline-adapter-tests.git#associations",
+    "waterline-adapter-tests": "~0.10.0",
     "mocha": "*",
-    "root-require": "~0.2.0",
-    "captains-log": "~0.10.6"
+    "captains-log": "~0.11.0"
   },
-  "sailsAdapter": {
-    "sailsVersion": "~0.10.0",
-    "implements": [
+  "waterlineAdapter": {
+    "type": "baas",
+    "interfaces": [
       "semantic",
-      "queryable",
-      "associations"
-    ]
+      "queryable"
+    ],
+    "waterlineVersion": "~0.10.0"
   }
 }
