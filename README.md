@@ -1,31 +1,8 @@
 ![image_squidhome@2x.png](http://i.imgur.com/RIvu9.png) 
 
-# sails-adapter-boilerplate
-
-This template exists to make it easier for you to get started writing an adapter for Sails.js.
-
-> ### Generator now available
->
-> `$ sails generate adapter foo`
->
-> (see https://github.com/balderdashy/sails-generate-adapter for the source.)
+# sails-adapter
 
 
-
-
-> ### WARNING
->
-> This version of the adapter is for the upcoming v0.10 release of Sails / Waterline.
-> Check out the 0.8 branch for the original stuff.
-
-
-
-## Getting started
-It's usually pretty easy to add your own adapters for integrating with proprietary systems or existing open APIs.  For most things, it's as easy as `require('some-module')` and mapping the appropriate methods to match waterline semantics.  To get started:
-
-1. Fork this repository
-2. Set up your `README.md` and `package.json` file.  Sails.js adapter module names are of the form sails-*, where * is the name of the datastore or service you're integrating with.
-3. Build your adapter.
 
 ## How to test your adapter
 
