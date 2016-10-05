@@ -21,7 +21,10 @@
   "author": "Gautham V Kidiyoor",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "dependencies": {},
+  "dependencies": {
+    "request": "^2.75.0",
+    "usergrid": "~0.10.11"
+  },
   "devDependencies": {
     "waterline-adapter-tests": "~0.10.0",
     "mocha": "*",
