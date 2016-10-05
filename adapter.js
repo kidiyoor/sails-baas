@@ -67,8 +67,8 @@ module.exports = (function () {
 			orgName: 'gkidiyoortesting',
       appName: 'sandbox',
       authType: 'AUTH_CLIENT_ID', // authType:usergrid.AUTH_APP_USER   
-      clientId:'XXXXX',
-      clientSecret:'XXXXXX',
+      clientId:'XXXX',
+      clientSecret:'XXXX',
       logging: false, //optional - turn on logging, off by default
       buildCurl: false //optional - turn on curl commands, off by default
     },

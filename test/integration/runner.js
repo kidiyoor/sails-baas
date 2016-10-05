@@ -17,7 +17,7 @@ var util = require('util');
 var mocha = require('mocha');
 var log = new (require('captains-log'))();
 var TestRunner = require('waterline-adapter-tests');
-var Adapter = require('../../baasAdapter');
+var Adapter = require('../../adapter.js');
 
 
 
@@ -66,7 +66,14 @@ new TestRunner({
 
     // Default adapter config to use.
     config: {
-        schema: false
+        URI: 'https://api.usergrid.com',
+        orgName: 'gkidiyoortesting',
+        appName: 'sandbox',
+        authType: 'AUTH_CLIENT_ID', // authType:usergrid.AUTH_APP_USER   
+        clientId:'XXXX',
+        clientSecret:'XXXX',
+        logging: false, //optional - turn on logging, off by default
+        buildCurl: false //optional - turn on curl commands, off by default
     },
 
     // The set of adapter interfaces to test against.
