@@ -201,6 +201,20 @@ module.exports = (function () {
         if(err) return cb(err);
         return cb(null, data);
       });
+    },
+
+    count: function (connection, collection, options, cb) {
+      util.count(connection, collection, options, function(err, data){
+        if(err) return cb(err);
+        return cb(null, data);
+      });
+    },
+
+    countByType: function (connection, collection, options, cb) {
+      util.countByType(connection, collection, options, function(err, data){
+        if(err) return cb(err);
+        return cb(null, data);
+      });
     }
 
     /*
