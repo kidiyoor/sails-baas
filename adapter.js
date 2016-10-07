@@ -63,12 +63,12 @@ module.exports = (function () {
 
     // Default configuration for connections
     defaults: {
-      URI: 'https://api.usergrid.com',
-			orgName: 'gkidiyoortesting',
-      appName: 'sandbox',
-      authType: 'AUTH_CLIENT_ID', // authType:usergrid.AUTH_APP_USER   
-      clientId:'XXXX',
-      clientSecret:'XXXX',
+      URI: '',
+			orgName: '',
+      appName: '',
+      authType: '', // authType:usergrid.AUTH_APP_USER   
+      clientId:'',
+      clientSecret:'',
       logging: false, //optional - turn on logging, off by default
       buildCurl: false //optional - turn on curl commands, off by default
     },
